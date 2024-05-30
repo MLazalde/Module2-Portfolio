@@ -47,25 +47,76 @@ a {
   align-content: center;
   background-color: var(--accents);
   margin-top: 5px;
+  text-decoration: none;
+  color: black;
+}
+
+/* Actions for the buttons */
+
+a:hover {
+  color: green;
 }
 
 /* The following is for the "About me" Section */
 
-section .aboutMe {
+.aboutMe {
+  container-type: inline-size;
+  width: 100%;
+  height: 200px;
+  margin-inline: auto;
   display: flex;
-  height: 50px;
+  gap: 1rem;
+  padding: 10px;
 }
 
-aside img {
-  object-fit: contain;
+.aboutMe h2 {
+  width: 30%;
+  align-content: center;
+  padding: 10px;
+  border-right: 10px solid navy;
+  border-radius: 10px;
 }
 
-aside {
-  flex: 30%;
+.aboutMe p {
+  align-content: center;
+  font-size: x-large;
+  flex-shrink: 1;
 }
 
-@media screen and (max-width: 768px) {
-  header {
+/* Article pertaining to projects */
+
+.projects {
+  container-type: inline-size;
+  width: 100%;
+  height: auto;
+  margin-inline: auto;
+  display: flex;
+  gap: 1rem;
+  padding: 10px;
+}
+
+.projects h2 {
+  width: 10%;
+  align-content: center;
+  padding: 10px;
+  border-right: 10px solid navy;
+  border-radius: 10px;
+}
+
+.container {
+  container-type: normal;
+}
+.card {
+  width: 200px;
+  height: 200px;
+}
+
+@media screen and (max-width: 1050px) {
+  header,
+  article,
+  ul {
+    height: auto;
     flex-direction: column;
+    align-content: center;
   }
 }
