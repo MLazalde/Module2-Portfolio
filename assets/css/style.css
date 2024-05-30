@@ -1,0 +1,71 @@
+:root {
+  --background: #808080;
+  --front: #008080;
+  --accents: #fffff0;
+}
+
+* {
+  background-color: var(--background);
+}
+
+/* The following all pertains to the header. */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--front);
+  height: 70px;
+}
+
+.button {
+  background-color: var(--accents);
+}
+
+header .button {
+  align-content: center;
+  justify-content: space-between;
+  height: 40px;
+  width: 150px;
+  border-radius: 10px;
+}
+
+header h1 {
+  align-content: center;
+  padding-left: 20px;
+  font-size: 50px;
+  background-color: var(--front);
+  color: azure;
+}
+header ul {
+  position: relative;
+  background-color: var(--front);
+  right: 20px;
+}
+
+.button h2,
+a {
+  align-content: center;
+  background-color: var(--accents);
+  margin-top: 5px;
+}
+
+/* The following is for the "About me" Section */
+
+section .aboutMe {
+  display: flex;
+  height: 50px;
+}
+
+aside img {
+  object-fit: contain;
+}
+
+aside {
+  flex: 30%;
+}
+
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+}
