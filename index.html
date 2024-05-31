@@ -3,35 +3,51 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="./assets/css/reset.css" />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <title>Miguel Lazalde Portfolio</title>
   </head>
   <body>
     <header>
+      <img
+        src="./assets/Images/2020-09-22 (2).png"
+        alt="Picture of Miguel Lazalde"
+      />
       <h1>Miguel Lazalde</h1>
       <ul>
-          <button class="button"><h2><a href="#">About Me</h2></a></button>
-          <button class="button"><h2><a href="#">Projects</h2></a></button>
-          <button class="button"><h2><a href="#">Contact Me</h2></a></button>
-          <button class="button"><h2><a href="#">Resume</h2></a></button>
+        <button>
+          <h2><a href="#aboutMe"> About Me </a></h2>
+        </button>
+        <button>
+          <h2><a href="#projects"> Projects </a></h2>
+        </button>
+        <button>
+          <h2><a href="#">Contact Me</a></h2>
+        </button>
+        <button>
+          <h2><a href="#">Resume</a></h2>
+        </button>
       </ul>
     </header>
     <article class="aboutMe">
-      <img src="./assets/Images/2020-09-22 (2).png" alt="Picture of Miguel Lazalde">
-      <h2>About Me</h2>
-      <p>Salesforce Ranger. Over 10 years experience in commercial sales. Passionate about learning cutting edge technologies and intrigued by business operations. Committed to customer and teammate success.</p>
+      <h2 id="aboutMe">About Me</h2>
+      <p>
+        Salesforce Ranger. Over 10 years experience in commercial sales.
+        Passionate about learning cutting edge technologies and intrigued by
+        business operations. Committed to customer and teammate success.
+      </p>
     </article>
     <article class="projects">
       <h2>Projects</h2>
-      <div class="container">
-        <div class="card" id="css_cheatsheet">
-          <img src="./assets/Images/Screenshot 2024-05-30 085141.png" alt="preview of CSS Project">
-          <h2>CSS Cheatsheet</h2>
-        </div>
-        <img src="" alt="">
+      <div class="card" id="css_cheatsheet">
+        <img
+          src="./assets/Images/Screenshot 2024-05-30 085141.png"
+          alt="preview of CSS Project"
+        />
+        <h2>CSS Cheatsheet</h2>
+
+        <img src="" alt="" />
       </div>
     </article>
-
   </body>
 </html>
