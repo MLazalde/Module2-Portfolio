@@ -76,6 +76,8 @@ article p {
 
 .projectContainer {
   width: 75%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .card {
@@ -151,7 +153,6 @@ footer a:hover {
 @media screen and (max-width: 1050px) {
   header {
     height: auto;
-    flex-direction: column;
     align-content: center;
   }
 
@@ -162,7 +163,8 @@ footer a:hover {
     flex-direction: column;
     justify-content: center;
   }
-  article {
+
+  .projectContainer {
     flex-direction: column;
   }
 }
